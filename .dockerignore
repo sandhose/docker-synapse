@@ -1,0 +1,5 @@
+.dockerignore
+Dockerfile
+Makefile
+manifest.sh
+README.md
