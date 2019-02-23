@@ -212,3 +212,4 @@ tls_certificate_path: "/secrets/tls.crt"
 tls_private_key_path: "/secrets/tls.key"
 tls_dh_params_path: "/secrets/tls.dh"
 tls_fingerprints: []
+{% endif %}
