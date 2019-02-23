@@ -206,8 +206,9 @@ listeners:
   {% endif %}
 
 ## TLS ##
+no_tls: {{ "True" if SYNAPSE_NO_TLS else "False" }}
+{% if not SYNAPSE_NO_TLS %}
 tls_certificate_path: "/secrets/tls.crt"
 tls_private_key_path: "/secrets/tls.key"
 tls_dh_params_path: "/secrets/tls.dh"
-no_tls: {{ "True" if SYNAPSE_NO_TLS else "False" }}
 tls_fingerprints: []
